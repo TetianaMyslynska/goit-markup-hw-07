@@ -10,25 +10,27 @@
   background-size: 1600px;
   background-repeat: no-repeat;
   background-position: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;
+    letter-spacing: 6%;
+    color: $primary-white-color;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 696px;
+  }
 }
-.hero-section__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.hero-section__title {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36em;
-  letter-spacing: 6%;
-  color: $primary-white-color;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  width: 696px;
-}
+
 .hero-button {
   @include common-button(200px, 50px);
   font-family: $main-font;

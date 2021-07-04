@@ -1,8 +1,8 @@
 .activities-section {
   padding-bottom: 94px;
-}
-.activities-section__container {
-  padding: 0 15px;
+  &__container {
+    padding: 0 15px;
+  }
 }
 .activities-list {
   @extend %space-betweenFlex;
@@ -23,15 +23,15 @@
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
   @extend %centeredFlex;
-}
-.overlay-box__text {
-  color: $primary-white-color;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  &__text {
+    color: $primary-white-color;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }

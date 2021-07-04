@@ -1,10 +1,11 @@
 .page-header {
   border: 1px solid #ececec;
-}
-.page-header__container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .link--active {
   position: relative;
@@ -35,6 +36,11 @@
 .contacts-links {
   display: flex;
   align-items: flex-end;
+  &__icon {
+    @extend %centeredFlex;
+    margin-left: 50px;
+    fill: currentColor;
+  }
 }
 .contacts-links__link {
   display: flex;
@@ -47,11 +53,7 @@
     color: $accent-color-blue;
   }
 }
-.contacts-links__icon {
-  @extend %centeredFlex;
-  margin-left: 50px;
-  fill: currentColor;
-}
+
 .icon-envelope,
 .icon-smartphone {
   margin-right: 10px;

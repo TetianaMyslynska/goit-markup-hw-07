@@ -2,7 +2,6 @@
   background-color: $primary-white-color;
   padding: 94px 0;
 }
-
 .buttons-box {
   width: 611px;
   height: 54px;
@@ -43,6 +42,28 @@
   margin-right: -15px;
   margin-bottom: -30px;
   margin-top: 0;
+
+  &__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.15em;
+    letter-spacing: 0.06em;
+    color: $primary-text-color;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87em;
+    letter-spacing: 0.03em;
+    color: $accent-color-grey;
+    margin: 0;
+  }
 }
 .projects-list__item {
   flex-basis: calc(100% / 3 - 30px);
@@ -67,27 +88,7 @@
 .projects-list__label {
   padding: 20px 24px;
 }
-.projects-list__title {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.15em;
-  letter-spacing: 0.06em;
-  color: $primary-text-color;
-  margin: 0;
-  margin-bottom: 4px;
-}
-.projects-list__text {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.87em;
-  letter-spacing: 0.03em;
-  color: $accent-color-grey;
-  margin: 0;
-}
+
 .wrapper-img {
   position: relative;
   overflow: hidden;

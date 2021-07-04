@@ -8,10 +8,11 @@
   line-height: 1.2em;
   letter-spacing: 0.03em;
   margin-right: 93px;
-}
-.logo__text-blue {
-  color: $accent-color-blue;
-}
-.logo__text-white {
-  color: $primary-white-color;
+
+  &__text-blue {
+    color: $accent-color-blue;
+  }
+  &__text-white {
+    color: $primary-white-color;
+  }
 }

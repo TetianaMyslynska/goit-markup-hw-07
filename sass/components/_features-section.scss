@@ -8,7 +8,28 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  &__title {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  &__text {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71em;
+    color: $accent-color-grey;
+  }
 }
+
 .features-list__item::before {
   content: '';
   display: block;
@@ -19,18 +40,7 @@
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-.features-list__title {
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.17em;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
+
 .features-list__item--antenna::before {
   background-image: url(../images/antenna.svg);
 }
@@ -42,12 +52,4 @@
 }
 .features-list__item--astronaut::before {
   background-image: url(../images/astronaut.svg);
-}
-.features-list__text {
-  font-family: $main-font;
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.71em;
-  color: $accent-color-grey;
 }

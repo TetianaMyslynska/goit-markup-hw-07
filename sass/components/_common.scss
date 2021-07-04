@@ -42,8 +42,10 @@
 .social-media {
   @extend %centeredFlex;
   margin-bottom: 30px;
+  &__link {
+    @extend %centeredFlex;
+  }
 }
-
 .social-media__item {
   width: 44px;
   height: 44px;
@@ -62,9 +64,6 @@
   }
 }
 
-.social-media__link {
-  @extend %centeredFlex;
-}
 .social-media__icon {
   fill: $light-grey-color;
   .social-media__item:hover & {

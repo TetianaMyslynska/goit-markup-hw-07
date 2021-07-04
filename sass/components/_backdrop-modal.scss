@@ -119,19 +119,18 @@
 
 .agreement-row {
   color: $primary-white-color;
+  &__label {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $accent-color-grey;
+    cursor: pointer;
+    @extend %centeredFlex;
+  }
 }
-.agreement-row__label {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: $accent-color-grey;
-  cursor: pointer;
-  @extend %centeredFlex;
-}
-
 .agreement-row__label--blue {
   color: $accent-color-blue;
   margin-left: 3px;
@@ -151,7 +150,7 @@
   border: 2px solid $primary-text-color;
   border-radius: 4px;
   margin-right: 7px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(border-color);
   .checkbox-input:focus + & {
     border-color: $accent-color-blue;
   }
