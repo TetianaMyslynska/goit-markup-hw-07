@@ -1,0 +1,17 @@
+.logo {
+  color: $primary-text-color;
+  font-family: $accent-font;
+  line-height: 80px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+}
+.logo__text-blue {
+  color: $accent-color-blue;
+}
+.logo__text-white {
+  color: $primary-white-color;
+}
